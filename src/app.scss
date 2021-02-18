@@ -12,16 +12,62 @@
   margin: 0 auto;
 }
 
+.button-1, .button-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid $dark-blue;
+  cursor: pointer;
+}
+
+.button-1 {
+  color: $custom-white;
+  background-color: $dark-blue;
+}
+
+.button-2 {
+  color: $dark-blue;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: .9em;
+  color: $light-blue;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  display: inline-block;
+}
+
+.darkblue-bubble, .lightblue-bubble {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.darkblue-bubble {
+  background-color: $main-blue;
+}
+
+.lightblue-bubble {
+  background-color: $transparent-lightblue;
+}
+
 header {
   height: 50px;
   background-color: $main-blue;
-  font-size: .9em;
+  font-size: .8em;
 
   .header {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    color: white;
+    color: $custom-white;
 
     &-left, &-right {
       display: flex;
@@ -51,18 +97,26 @@ header {
   height: 700px;
   background-size: cover;
   background-position: bottom;
+  color: $main-blue;
 
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .nav-left span:first-child {
-    background-color: yellow;
-    opacity: .7;
+  .logo span {
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+  .logo span:first-child {
+    background-color: $transparent-lightblue;
     border-radius: 100px 0 0 100px;
-    padding: 10px 0 10px 20px;
+    padding: 10px 5px 10px 25px;
+    color: $light-blue;
+
   }
 
   .nav-right ul {
@@ -70,6 +124,173 @@ header {
 
     & li {
       display: inline-block;
+      font-size: .9em;
+      font-weight: 500;
+      margin-right: 30px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-form {
+    height: calc(100% - 61px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    h1 {
+      font-size: 4em;
+      font-weight: 900;
+    }
+
+    .form-content {
+      width: 400px;
+    }
+
+    .button-1 {
+      margin: 5px 10px 0 0;
+    }
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+
+      input, div {
+        width: calc(50% - 10px);
+        font-size: 14px;
+        border: none;
+        background-color: lightgrey;
+        margin: 10px 0;
+        padding: 10px;
+
+        &:first-child, &:nth-child(3) {
+          margin-right: 20px;
+        }
+
+        i {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.company-section {
+  background-color: $custom-black;
+  color: $custom-white;
+  padding: 120px 0;
+
+  .company-content {
+    display: flex;
+
+    p {
+      font-size: .9em;
+    }
+
+    &-left {
+      width: 40%;
+      margin-right: 60px;
+
+      h1 {
+        font-weight: 800;
+        font-size: 3em;
+        margin: 20px 0;
+      }
+    }
+
+    &-right {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      div {
+        width: 40%;
+        margin-right: 15px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      i {
+        color: $dark-blue;
+        font-size: 1.3em;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.services-section {
+  background-color: $custom-white;
+  color: $main-blue;
+  padding: 100px 0;
+
+  .lightblue-bubble {
+    color: $dark-blue;
+  }
+
+  h1 {
+    margin: 20px 0;
+    font-size: 3em;
+  }
+
+  .sub-title-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: .9em;
+    width: 70%;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+      background-color: white;
+      height: 200px;
+      width: 31%;
+      border-radius: 10px;
+      margin-top: 30px;
+      padding: 40px;
+
+      h3 {
+        display: block;
+      }
+
+      i {
+        color: $dark-blue;
+        font-size: 2em;
+      }
+
+      .fa-arrow-right {
+        float: right;
+        color: $light-blue;
+        font-size: 1.5em;
+      }
+
+      h3 {
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: .8em;
+      }
     }
   }
 }
