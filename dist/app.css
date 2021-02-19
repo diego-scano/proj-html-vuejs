@@ -54,6 +54,7 @@ h3 {
 
 .lightblue-bubble {
   background-color: rgba(69, 187, 188, 0.3);
+  color: #078282;
 }
 
 header {
@@ -202,9 +203,6 @@ header .header .social-icons i:last-child {
   color: #21333e;
   padding: 100px 0;
 }
-.services-section .lightblue-bubble {
-  color: #078282;
-}
 .services-section h1 {
   margin: 20px 0;
   font-size: 3em;
@@ -249,5 +247,85 @@ header .header .social-icons i:last-child {
   margin: 10px 0;
 }
 .services-section .grid div p {
+  font-size: 0.8em;
+}
+
+.management-section {
+  color: #21333e;
+  padding: 100px 0;
+}
+.management-section-content {
+  text-align: center;
+}
+.management-section-content h1 {
+  font-size: 3em;
+  margin: 20px 0;
+}
+.management-section-content p {
+  width: 800px;
+  margin: 0 auto;
+}
+.management-section-content .row {
+  height: 6px;
+  background-color: rgba(69, 187, 188, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.management-section-content .row div {
+  background-color: #c7eaeb;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  color: #078282;
+  font-weight: 800;
+}
+.management-section-content .row-description {
+  display: flex;
+  justify-content: space-around;
+}
+.management-section-content .row-description div {
+  width: 15%;
+}
+.management-section-content .row-description div h3 {
+  margin: 30px 0 20px 0;
+}
+.management-section-content .row-description div p {
+  font-size: 0.7em;
+  width: 200px;
+}
+
+.team-section {
+  background-color: #1c2224;
+  color: #e8ecea;
+}
+.team-section h1 {
+  font-size: 3em;
+}
+.team-section .team-section-sub {
+  display: flex;
+  justify-content: space-between;
+}
+.team-section .team-section-sub-left {
+  width: 60%;
+}
+.team-section .team-section-sub-right {
+  width: 40%;
+}
+.team-section .team-section-sub img {
+  width: 80px;
+  border-radius: 5px;
+}
+.team-section .team-section-sub .team-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team-section .team-section-sub .team-photos .team-container {
+  display: flex;
+  width: 300px;
+}
+.team-section .team-section-sub .team-photos .team-container p {
   font-size: 0.8em;
 }
