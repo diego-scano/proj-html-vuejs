@@ -7,6 +7,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+// UTILITY CLASSES -------------------------------------------------------------
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -80,6 +82,9 @@ a {
 li {
   list-style: none;
 }
+
+// end UTILITY -----------------------------------------------------------------
+
 
 header {
   height: 50px;
@@ -540,7 +545,7 @@ header {
 
   .logo {
     font-size: 1.5em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &-content {
