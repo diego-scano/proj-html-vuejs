@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,6 +36,7 @@
 
 h1 {
   font-family: "Poppins", sans-serif;
+  font-size: 3em;
 }
 
 h3 {
@@ -55,6 +57,27 @@ h3 {
 .lightblue-bubble {
   background-color: rgba(69, 187, 188, 0.3);
   color: #078282;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.logo span:first-child {
+  background-color: rgba(69, 187, 188, 0.3);
+  border-radius: 100px 0 0 100px;
+  padding: 10px 5px 10px 25px;
+  color: #45bbbc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -97,16 +120,6 @@ header .header .social-icons i:last-child {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-}
-.jumbotron .logo span {
-  font-weight: 700;
-  font-size: 1.1em;
-}
-.jumbotron .logo span:first-child {
-  background-color: rgba(69, 187, 188, 0.3);
-  border-radius: 100px 0 0 100px;
-  padding: 10px 5px 10px 25px;
-  color: #45bbbc;
 }
 .jumbotron .nav-right ul {
   list-style: none;
@@ -160,7 +173,7 @@ header .header .social-icons i:last-child {
 }
 
 .company-section {
-  background-color: #1c2224;
+  background-color: #111117;
   color: #e8ecea;
   padding: 120px 0;
 }
@@ -176,7 +189,6 @@ header .header .social-icons i:last-child {
 }
 .company-section .company-content-left h1 {
   font-weight: 800;
-  font-size: 3em;
   margin: 20px 0;
 }
 .company-section .company-content-right {
@@ -205,7 +217,6 @@ header .header .social-icons i:last-child {
 }
 .services-section h1 {
   margin: 20px 0;
-  font-size: 3em;
 }
 .services-section .sub-title-services {
   display: flex;
@@ -258,7 +269,6 @@ header .header .social-icons i:last-child {
   text-align: center;
 }
 .management-section-content h1 {
-  font-size: 3em;
   margin: 20px 0;
 }
 .management-section-content p {
@@ -297,25 +307,48 @@ header .header .social-icons i:last-child {
 }
 
 .team-section {
-  background-color: #1c2224;
+  background-color: #111117;
   color: #e8ecea;
+  padding: 80px;
 }
 .team-section h1 {
-  font-size: 3em;
+  margin: 20px 0;
+}
+.team-section p {
+  font-size: 0.9em;
 }
 .team-section .team-section-sub {
   display: flex;
   justify-content: space-between;
 }
 .team-section .team-section-sub-left {
-  width: 60%;
+  width: 65%;
 }
 .team-section .team-section-sub-right {
-  width: 40%;
+  width: 30%;
+  background-color: #45bbbc;
+  border-radius: 5px;
+  padding: 30px;
+}
+.team-section .team-section-sub-right h3 {
+  margin-bottom: 15px;
+}
+.team-section .team-section-sub-right span {
+  font-weight: 800;
+  margin-top: 20px;
+  float: left;
+}
+.team-section .team-section-sub-right i {
+  float: right;
+  color: black;
+  opacity: 0.5;
+  font-size: 2em;
+  margin-top: 10px;
 }
 .team-section .team-section-sub img {
   width: 80px;
   border-radius: 5px;
+  margin-right: 20px;
 }
 .team-section .team-section-sub .team-photos {
   display: flex;
@@ -325,7 +358,156 @@ header .header .social-icons i:last-child {
 .team-section .team-section-sub .team-photos .team-container {
   display: flex;
   width: 300px;
+  margin-top: 30px;
+}
+.team-section .team-section-sub .team-photos .team-container .icons {
+  display: flex;
+}
+.team-section .team-section-sub .team-photos .team-container .icons .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 2px;
 }
 .team-section .team-section-sub .team-photos .team-container p {
   font-size: 0.8em;
+  margin: 10px 0;
+}
+
+.news-section {
+  padding: 100px 0;
+}
+.news-section h1 {
+  margin: 20px 0;
+}
+.news-section .subtitle-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-section .news-images-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.news-section .news-images-container .news-image {
+  width: 31%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+.news-section .news-images-container .news-image .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+}
+.news-section .news-images-container .news-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.news-section .news-images-container .news-image h3 {
+  padding: 30px;
+  color: #e8ecea;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  text-align: center;
+  z-index: 1;
+}
+
+.know-section {
+  background-image: url("../img/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+.know-section-content {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.know-section-content h1 {
+  margin: 20px 0;
+}
+.know-section-content-left, .know-section-content-right {
+  width: 47%;
+}
+.know-section-content-right input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #111117;
+  color: #e8ecea;
+  padding: 100px 0;
+}
+.footer span, .footer p {
+  font-size: 0.8em;
+}
+.footer .logo {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content .button-2 {
+  color: #e8ecea;
+}
+.footer-content-left, .footer-content-right {
+  width: 23%;
+}
+.footer-content-left div {
+  margin: 10px 0;
+}
+.footer-content-left i {
+  margin-right: 10px;
+}
+.footer-content-right {
+  background-color: #19191f;
+  padding: 30px 0 30px 30px;
+  border-radius: 10px;
+}
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+.footer-content li:before {
+  font-family: "FontAwesome";
+  font-weight: lighter;
+  content: "";
+  margin-right: 10px;
+  font-size: 1.5em;
+  position: relative;
+  top: 2px;
+}
+
+.sub-footer {
+  background-color: #0d0d11;
+  color: #e8ecea;
+  font-size: 0.8em;
+  padding: 20px 0;
+}
+.sub-footer span {
+  color: #45bbbc;
+}
+.sub-footer-content {
+  display: flex;
+  justify-content: space-between;
 }
