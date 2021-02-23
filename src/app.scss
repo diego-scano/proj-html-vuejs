@@ -5,13 +5,6 @@
   justify-content: space-between;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
 // UTILITY CLASSES -------------------------------------------------------------
 
 .container {
@@ -90,9 +83,15 @@ li {
 
 // end UTILITY -----------------------------------------------------------------
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 
 header {
-  height: 50px;
+  padding: 15px 0;
   background-color: $main-blue;
   font-size: .8em;
 
@@ -103,7 +102,6 @@ header {
 
     &-left, &-right {
       display: flex;
-      align-items: center;
     }
 
     &-right div {
@@ -145,11 +143,6 @@ header {
       font-size: .9em;
       font-weight: 500;
       margin-right: 30px;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
 
       &:last-child {
         margin-right: 0;

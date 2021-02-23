@@ -1,11 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -80,8 +73,15 @@ li {
   list-style: none;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
-  height: 50px;
+  padding: 15px 0;
   background-color: #21333e;
   font-size: 0.8em;
 }
@@ -93,7 +93,6 @@ header .header {
 }
 header .header-left, header .header-right {
   display: flex;
-  align-items: center;
 }
 header .header-right div {
   margin-right: 30px;
@@ -129,10 +128,6 @@ header .header .social-icons i:last-child {
   font-size: 0.9em;
   font-weight: 500;
   margin-right: 30px;
-}
-.jumbotron .nav-right ul li a {
-  text-decoration: none;
-  color: inherit;
 }
 .jumbotron .nav-right ul li:last-child {
   margin-right: 0;
