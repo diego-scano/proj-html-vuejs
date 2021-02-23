@@ -1,5 +1,10 @@
 @import "_colors";
 
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,23 +23,23 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid $dark-blue;
+  border: 1px solid $second-blue;
   cursor: pointer;
 }
 
 .button-1 {
   color: $custom-white;
-  background-color: $dark-blue;
+  background-color: $second-blue;
 }
 
 .button-2 {
-  color: $dark-blue;
+  color: $second-blue;
 }
 
 .pre-title {
   font-weight: 600;
   font-size: .9em;
-  color: $light-blue;
+  color: $second-blue;
 }
 
 h1 {
@@ -59,7 +64,7 @@ h3 {
 
 .lightblue-bubble {
   background-color: $transparent-lightblue;
-  color: $dark-blue;
+  color: $second-blue;
 }
 
 .logo span {
@@ -71,7 +76,7 @@ h3 {
   background-color: $transparent-lightblue;
   border-radius: 100px 0 0 100px;
   padding: 10px 5px 10px 25px;
-  color: $light-blue;
+  color: $second-blue;
 }
 
 a {
@@ -92,8 +97,7 @@ header {
   font-size: .8em;
 
   .header {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     height: 100%;
     color: $custom-white;
 
@@ -128,8 +132,7 @@ header {
   color: $main-blue;
 
   nav {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     align-items: center;
     padding: 10px 0;
   }
@@ -235,7 +238,7 @@ header {
       }
 
       i {
-        color: $dark-blue;
+        color: $second-blue;
         font-size: 1.3em;
         margin-right: 5px;
       }
@@ -253,8 +256,7 @@ header {
   }
 
   .sub-title-services {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     align-items: center;
     margin-bottom: 10px;
     margin: 20px 0;
@@ -266,9 +268,8 @@ header {
   }
 
   .grid {
-    display: flex;
+    @include flex-space-between;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     div {
       background-color: white;
@@ -283,13 +284,13 @@ header {
       }
 
       i {
-        color: $dark-blue;
+        color: $second-blue;
         font-size: 2em;
       }
 
       .fa-arrow-right {
         float: right;
-        color: $light-blue;
+        color: $second-blue;
         font-size: 1.5em;
       }
 
@@ -333,7 +334,7 @@ header {
         padding: 10px;
         border-radius: 50%;
         z-index: 1;
-        color: $dark-blue;
+        color: $second-blue;
         font-weight: 800;
       }
     }
@@ -372,8 +373,7 @@ header {
   }
 
   .team-section-sub {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
 
     &-left {
       width: 65%;
@@ -381,7 +381,7 @@ header {
 
     &-right {
       width: 30%;
-      background-color: $light-blue;
+      background-color: $second-blue;
       border-radius: 5px;
       padding: 30px;
 
@@ -411,9 +411,8 @@ header {
     }
 
     .team-photos {
-      display: flex;
+      @include flex-space-between;
       flex-wrap: wrap;
-      justify-content: space-between;
 
       .team-container {
         display: flex;
@@ -452,14 +451,12 @@ header {
   }
 
   .subtitle-news {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     align-items: center;
   }
 
   .news-images-container {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     margin-top: 30px;
 
     .news-image {
@@ -507,10 +504,9 @@ header {
   padding: 100px 0;
 
   &-content {
+    @include flex-space-between;
     width: 800px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 
     h1 {
       margin: 20px 0;
@@ -549,8 +545,7 @@ header {
   }
 
   &-content {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
 
     .button-2 {
       color: $custom-white;
@@ -597,11 +592,10 @@ header {
   padding: 20px 0;
 
   span {
-    color: $light-blue;
+    color: $second-blue;
   }
 
   &-content {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
   }
 }

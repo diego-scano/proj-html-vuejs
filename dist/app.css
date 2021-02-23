@@ -15,23 +15,23 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid #078282;
+  border: 1px solid #e94649;
   cursor: pointer;
 }
 
 .button-1 {
   color: #e8ecea;
-  background-color: #078282;
+  background-color: #e94649;
 }
 
 .button-2 {
-  color: #078282;
+  color: #e94649;
 }
 
 .pre-title {
   font-weight: 600;
   font-size: 0.9em;
-  color: #45bbbc;
+  color: #e94649;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h3 {
 
 .lightblue-bubble {
   background-color: rgba(69, 187, 188, 0.3);
-  color: #078282;
+  color: #e94649;
 }
 
 .logo span {
@@ -68,7 +68,7 @@ h3 {
   background-color: rgba(69, 187, 188, 0.3);
   border-radius: 100px 0 0 100px;
   padding: 10px 5px 10px 25px;
-  color: #45bbbc;
+  color: #e94649;
 }
 
 a {
@@ -205,7 +205,7 @@ header .header .social-icons i:last-child {
   margin-bottom: 10px;
 }
 .company-section .company-content-right i {
-  color: #078282;
+  color: #e94649;
   font-size: 1.3em;
   margin-right: 5px;
 }
@@ -231,8 +231,8 @@ header .header .social-icons i:last-child {
 }
 .services-section .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services-section .grid div {
   background-color: white;
@@ -246,12 +246,12 @@ header .header .social-icons i:last-child {
   display: block;
 }
 .services-section .grid div i {
-  color: #078282;
+  color: #e94649;
   font-size: 2em;
 }
 .services-section .grid div .fa-arrow-right {
   float: right;
-  color: #45bbbc;
+  color: #e94649;
   font-size: 1.5em;
 }
 .services-section .grid div h3 {
@@ -288,7 +288,7 @@ header .header .social-icons i:last-child {
   padding: 10px;
   border-radius: 50%;
   z-index: 1;
-  color: #078282;
+  color: #e94649;
   font-weight: 800;
 }
 .management-section-content .row-description {
@@ -326,7 +326,7 @@ header .header .social-icons i:last-child {
 }
 .team-section .team-section-sub-right {
   width: 30%;
-  background-color: #45bbbc;
+  background-color: #e94649;
   border-radius: 5px;
   padding: 30px;
 }
@@ -352,8 +352,8 @@ header .header .social-icons i:last-child {
 }
 .team-section .team-section-sub .team-photos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .team-section .team-section-sub .team-photos .team-container {
   display: flex;
@@ -432,10 +432,10 @@ header .header .social-icons i:last-child {
   padding: 100px 0;
 }
 .know-section-content {
-  width: 800px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
 }
 .know-section-content h1 {
   margin: 20px 0;
@@ -505,7 +505,7 @@ header .header .social-icons i:last-child {
   padding: 20px 0;
 }
 .sub-footer span {
-  color: #45bbbc;
+  color: #e94649;
 }
 .sub-footer-content {
   display: flex;
